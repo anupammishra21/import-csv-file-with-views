@@ -1,0 +1,18 @@
+<%- include('../layouts/header') %>
+
+    <div class="container cssCal" >
+        <div class="heading">FILLUP THIS FORM</div>
+         <form method="post" action="/insert" enctype="multipart/form-data"> <!--  -->
+
+           
+            <div class="form-group">
+                <label>Image</label>
+                <input type="file" name="file" id="file" class="form-control"  >
+            </div>
+            <div class="form-group">                
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Enter</button>
+            </div>
+        </form>
+    </div>
+
+    <%- include('../layouts/footer') %>

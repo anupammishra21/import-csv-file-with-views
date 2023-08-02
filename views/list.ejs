@@ -1,0 +1,29 @@
+<%- include('../layouts/header') %>
+
+<div class="container">
+    <div class="heading">All Profiles List</div>
+    
+    <table class="table table-striped table-bordered">
+        <thead>
+          <tr style="background-color:darkgray">
+            <!-- <th scope="col">Images</th> -->
+            <th scope="col">FIRSTNAME</th>
+            <th scope="col">LASTNAME</th>
+           
+          </tr>
+          <% all_data.map(data => { %>
+            <tr>
+             
+              <td><%=  data.firstname %> </td>
+              <td><%=  data.lastname %> </td>
+            
+            </tr>
+          <% }) %>
+        </thead>
+        </tbody>
+      </table>
+</div>
+
+
+
+<%- include('../layouts/footer') %>
